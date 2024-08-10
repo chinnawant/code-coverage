@@ -17,6 +17,7 @@ for dir in "$base_dir"/*; do
         project=$(basename "$dir")
         cd "$dir" || exit  # Change to the directory or exit on failure
         echo "Updating $project"
+        git reset --hard
         git clean -df
         git pull origin
         cd ..  # Return to the parent directory

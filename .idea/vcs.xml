@@ -1,15 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/auth-server-adapter" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/consumer-activity-log" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/consumer-email" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/consumer-register-partner" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/eipp-api-adapter" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/prod-open-api-management-adapter" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/sandbox-core-adapter" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/sandbox-open-api-management-adapter" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/wholesale-api-adapter" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/wholesale-api-sandbox-adapter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
   </component>
 </project>
