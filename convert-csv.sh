@@ -20,7 +20,7 @@ fi
 
 # Check if input2 file exists
 if [ -f "$input_file2" ]; then
-  
+
     # Extract the coverage percentage from input2 using awk (more compatible)
     coverage=$(awk -F'[:]' '/Average coverage/ {print $3}' "$input_file2")
 
