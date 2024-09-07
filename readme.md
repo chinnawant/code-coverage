@@ -16,7 +16,7 @@ This project is a simple code coverage summary generator.
 bash gitclone.sh
 
 # Generate the code coverage summary
-bash func-cover.sh
+bash func-coverage.sh
 
 # Update lastet commit in the project
 bash git-update.sh
