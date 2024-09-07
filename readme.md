@@ -21,7 +21,4 @@ bash func-coverage.sh
 # Update lastet commit in the project
 bash git-update.sh
 
-# clean up
-bash gitclean.sh
-
 ```

@@ -12,6 +12,8 @@ path_test_dir="./pkg/service"
 # Check if the coverage report directory exists
 if [ -d "$dir_report" ]; then
   rm  ./$dir_report/*
+else
+  mkdir $dir_report
 fi
 
 
@@ -37,11 +39,11 @@ for dir in "."/*; do
 
         # Run the tests and calculate the coverage
         go test $path_test_dir -coverprofile cover.out
-         if ! go test $path_test_dir -coverprofile cover.out; then
-             echo "Error: Tests failed for $project" >> "../$dir_report/$error_file"
-             cd ..
-             continue
-         fi
+        if [ ! -f cover.out ]; then
+            echo "Error: cover.out file not found" >> "../$dir_report/$error_file"
+            cd ..  # Return to the parent directory
+            continue
+        fi
 
         # Extract the total coverage percentage from the coverage profile file (cover.out)
         coverage=$(go tool cover -func cover.out | grep total: | awk '{print $3}' | tr -d '%')

@@ -1,7 +1,7 @@
 
 
 # Clone all repositories in the open-api group
-glab repo clone -g pen-api/backend/orchestrator --paginate
+#glab repo clone -g pen-api/backend/orchestrator --paginate
 
 
 # Clone a specific repository
